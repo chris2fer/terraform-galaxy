@@ -1,8 +1,6 @@
 data "aws_ssoadmin_instances" "empire" {
   provider = "aws.east"
-  
 }
-
 
 output "arns" {
   value = tolist(data.aws_ssoadmin_instances.empire.arns)[*]
