@@ -1,5 +1,5 @@
 data "aws_ssoadmin_instances" "empire" {
-  provider = "aws.east"
+  provider = aws.east
 }
 
 output "arns" {
