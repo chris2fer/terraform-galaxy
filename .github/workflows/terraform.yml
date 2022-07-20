@@ -43,6 +43,7 @@ jobs:
 
     - name: Terraform Plan
       run: |
+        echo '::echo::off'
         terraform plan -input=false
         
     - name: Terraform Apply
